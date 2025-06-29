@@ -1,0 +1,15 @@
+[build]
+  # No build command needed for static HTML site
+  command = ""
+  # Publish the root directory since index.html is at the root
+  publish = "."
+
+[build.environment]
+  # Optional: specify Node.js version if needed
+  NODE_VERSION = "18"
+
+# Optional: Configure redirects for SPA behavior (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404 
