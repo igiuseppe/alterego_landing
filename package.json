@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "http-server . -p 3000 -o",
     "build": "npm run copy-files",
-    "copy-files": "mkdir -p dist && cp -r *.html css js images dist/",
+    "copy-files": "mkdir -p dist && cp -r *.html _redirects css js images dist/",
     "start": "npm run dev"
   },
   "devDependencies": {
