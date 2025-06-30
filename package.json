@@ -1,0 +1,18 @@
+{
+  "name": "alterego-landing",
+  "version": "1.0.0",
+  "description": "AlterEgo Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o",
+    "build": "npm run copy-files",
+    "copy-files": "mkdir -p dist && cp -r *.html css js images dist/",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["landing-page", "static-site"],
+  "author": "AlterEgo",
+  "license": "MIT"
+} 
